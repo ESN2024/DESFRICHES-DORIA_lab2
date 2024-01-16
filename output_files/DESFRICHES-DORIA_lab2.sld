@@ -1,13 +1,8 @@
 <sld_project_info>
   <sld_infos>
-    <sld_info hpath="" name="">
+    <sld_info hpath="counter:u0" name="u0">
       <assignment_values>
-        <assignment_value text="QSYS_NAME counter HAS_SOPCINFO 1 GENERATION_ID 1705391992"/>
-      </assignment_values>
-    </sld_info>
-    <sld_info hpath="sld_hub:auto_hub" name="auto_hub">
-      <assignment_values>
-        <assignment_value text="QSYS_NAME counter HAS_SOPCINFO 1 GENERATION_ID 1705391839"/>
+        <assignment_value text="QSYS_NAME counter HAS_SOPCINFO 1 GENERATION_ID 1705402034"/>
       </assignment_values>
     </sld_info>
     <sld_info hpath="sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:instrumentation_fabric" library="alt_sld_fab" name="instrumentation_fabric">

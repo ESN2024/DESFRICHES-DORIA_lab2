@@ -4,27 +4,39 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "pio_0_external_connection_export[0]",
+					"name" : "seg0[0]",
 					"strict" : false
 				},
 				{
-					"name" : "pio_0_external_connection_export[1]",
+					"name" : "seg0[1]",
 					"strict" : false
 				},
 				{
-					"name" : "pio_0_external_connection_export[2]",
+					"name" : "seg0[2]",
 					"strict" : false
 				},
 				{
-					"name" : "pio_0_external_connection_export[3]",
+					"name" : "seg0[3]",
 					"strict" : false
 				},
 				{
-					"name" : "clk_clk",
+					"name" : "seg0[4]",
 					"strict" : false
 				},
 				{
-					"name" : "reset_reset_n",
+					"name" : "seg0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
 					"strict" : false
 				},
 				{
