@@ -1,0 +1,9 @@
+
+State Machine - |counter|counter_nios2_gen2_0:nios2_gen2_0|counter_nios2_gen2_0_cpu:cpu|counter_nios2_gen2_0_cpu_nios2_oci:the_counter_nios2_gen2_0_cpu_nios2_oci|counter_nios2_gen2_0_cpu_debug_slave_wrapper:the_counter_nios2_gen2_0_cpu_debug_slave_wrapper|counter_nios2_gen2_0_cpu_debug_slave_tck:the_counter_nios2_gen2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
