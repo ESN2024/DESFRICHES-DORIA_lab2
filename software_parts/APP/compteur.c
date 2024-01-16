@@ -13,10 +13,11 @@ int main()
     __uint8_t val;
     while(1)
     {
-        val = 0;
+        val = 0x00;
         for(__uint8_t i=0; i<=9; i++)
         {
             IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, val);
+            usleep(DELAI);
             val++;
         }
     }

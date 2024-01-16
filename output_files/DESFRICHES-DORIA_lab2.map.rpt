@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DESFRICHES-DORIA_lab2
-Tue Jan 16 11:48:30 2024
+Tue Jan 16 14:40:19 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -177,7 +177,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jan 16 11:48:30 2024       ;
+; Analysis & Synthesis Status        ; Successful - Tue Jan 16 14:40:19 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DESFRICHES-DORIA_lab2                       ;
 ; Top-level Entity Name              ; top                                         ;
@@ -3476,7 +3476,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -3486,40 +3486,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jan 16 11:46:36 2024
+    Info: Processing started: Tue Jan 16 14:39:36 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DESFRICHES-DORIA_lab2 -c DESFRICHES-DORIA_lab2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12248): Elaborating Platform Designer system entity "counter.qsys"
-Info (12250): 2024.01.16.11:47:05 Progress: Loading TP2/counter.qsys
-Info (12250): 2024.01.16.11:47:06 Progress: Reading input file
-Info (12250): 2024.01.16.11:47:07 Progress: Adding clk_0 [clock_source 18.1]
-Info (12250): 2024.01.16.11:47:08 Progress: Parameterizing module clk_0
-Info (12250): 2024.01.16.11:47:08 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
-Info (12250): 2024.01.16.11:47:09 Progress: Parameterizing module jtag_uart_0
-Info (12250): 2024.01.16.11:47:09 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
-Info (12250): 2024.01.16.11:47:09 Progress: Parameterizing module nios2_gen2_0
-Info (12250): 2024.01.16.11:47:09 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
-Info (12250): 2024.01.16.11:47:09 Progress: Parameterizing module onchip_memory2_0
-Info (12250): 2024.01.16.11:47:09 Progress: Adding pio_0 [altera_avalon_pio 18.1]
-Info (12250): 2024.01.16.11:47:09 Progress: Parameterizing module pio_0
-Info (12250): 2024.01.16.11:47:09 Progress: Building connections
-Info (12250): 2024.01.16.11:47:09 Progress: Parameterizing connections
-Info (12250): 2024.01.16.11:47:09 Progress: Validating
-Info (12250): 2024.01.16.11:47:12 Progress: Done reading input file
+Info (12250): 2024.01.16.14:39:47 Progress: Loading TP2/counter.qsys
+Info (12250): 2024.01.16.14:39:47 Progress: Reading input file
+Info (12250): 2024.01.16.14:39:47 Progress: Adding clk_0 [clock_source 18.1]
+Info (12250): 2024.01.16.14:39:48 Progress: Parameterizing module clk_0
+Info (12250): 2024.01.16.14:39:48 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Info (12250): 2024.01.16.14:39:48 Progress: Parameterizing module jtag_uart_0
+Info (12250): 2024.01.16.14:39:48 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Info (12250): 2024.01.16.14:39:48 Progress: Parameterizing module nios2_gen2_0
+Info (12250): 2024.01.16.14:39:48 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Info (12250): 2024.01.16.14:39:48 Progress: Parameterizing module onchip_memory2_0
+Info (12250): 2024.01.16.14:39:48 Progress: Adding pio_0 [altera_avalon_pio 18.1]
+Info (12250): 2024.01.16.14:39:48 Progress: Parameterizing module pio_0
+Info (12250): 2024.01.16.14:39:48 Progress: Building connections
+Info (12250): 2024.01.16.14:39:48 Progress: Parameterizing connections
+Info (12250): 2024.01.16.14:39:48 Progress: Validating
+Info (12250): 2024.01.16.14:39:49 Progress: Done reading input file
 Info (12250): Counter.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info (12250): Counter: Generating counter "counter" for QUARTUS_SYNTH
 Info (12250): Jtag_uart_0: Starting RTL generation for module 'counter_jtag_uart_0'
-Info (12250): Jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=counter_jtag_uart_0 --dir=C:/Users/erwan/AppData/Local/Temp/alt9738_4779151395900993623.dir/0002_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/erwan/AppData/Local/Temp/alt9738_4779151395900993623.dir/0002_jtag_uart_0_gen//counter_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=counter_jtag_uart_0 --dir=C:/Users/erwan/AppData/Local/Temp/alt9738_2128057944611110451.dir/0002_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/erwan/AppData/Local/Temp/alt9738_2128057944611110451.dir/0002_jtag_uart_0_gen//counter_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Jtag_uart_0: Done RTL generation for module 'counter_jtag_uart_0'
 Info (12250): Jtag_uart_0: "counter" instantiated altera_avalon_jtag_uart "jtag_uart_0"
 Info (12250): Nios2_gen2_0: "counter" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info (12250): Onchip_memory2_0: Starting RTL generation for module 'counter_onchip_memory2_0'
-Info (12250): Onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=counter_onchip_memory2_0 --dir=C:/Users/erwan/AppData/Local/Temp/alt9738_4779151395900993623.dir/0003_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/erwan/AppData/Local/Temp/alt9738_4779151395900993623.dir/0003_onchip_memory2_0_gen//counter_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=counter_onchip_memory2_0 --dir=C:/Users/erwan/AppData/Local/Temp/alt9738_2128057944611110451.dir/0003_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/erwan/AppData/Local/Temp/alt9738_2128057944611110451.dir/0003_onchip_memory2_0_gen//counter_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Onchip_memory2_0: Done RTL generation for module 'counter_onchip_memory2_0'
 Info (12250): Onchip_memory2_0: "counter" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
 Info (12250): Pio_0: Starting RTL generation for module 'counter_pio_0'
-Info (12250): Pio_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=counter_pio_0 --dir=C:/Users/erwan/AppData/Local/Temp/alt9738_4779151395900993623.dir/0004_pio_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/erwan/AppData/Local/Temp/alt9738_4779151395900993623.dir/0004_pio_0_gen//counter_pio_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Pio_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=counter_pio_0 --dir=C:/Users/erwan/AppData/Local/Temp/alt9738_2128057944611110451.dir/0004_pio_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/erwan/AppData/Local/Temp/alt9738_2128057944611110451.dir/0004_pio_0_gen//counter_pio_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Pio_0: Done RTL generation for module 'counter_pio_0'
 Info (12250): Pio_0: "counter" instantiated altera_avalon_pio "pio_0"
 Info (12250): Avalon_st_adapter: Inserting error_adapter: error_adapter_0
@@ -3530,19 +3530,19 @@ Info (12250): Mm_interconnect_0: "counter" instantiated altera_mm_interconnect "
 Info (12250): Irq_mapper: "counter" instantiated altera_irq_mapper "irq_mapper"
 Info (12250): Rst_controller: "counter" instantiated altera_reset_controller "rst_controller"
 Info (12250): Cpu: Starting RTL generation for module 'counter_nios2_gen2_0_cpu'
-Info (12250): Cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=counter_nios2_gen2_0_cpu --dir=C:/Users/erwan/AppData/Local/Temp/alt9738_4779151395900993623.dir/0007_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/erwan/AppData/Local/Temp/alt9738_4779151395900993623.dir/0007_cpu_gen//counter_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info (12250): Cpu: # 2024.01.16 11:47:41 (*) Starting Nios II generation
-Info (12250): Cpu: # 2024.01.16 11:47:41 (*)   Checking for plaintext license.
-Info (12250): Cpu: # 2024.01.16 11:47:43 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
-Info (12250): Cpu: # 2024.01.16 11:47:43 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info (12250): Cpu: # 2024.01.16 11:47:43 (*)   LM_LICENSE_FILE environment variable is empty
-Info (12250): Cpu: # 2024.01.16 11:47:43 (*)   Plaintext license not found.
-Info (12250): Cpu: # 2024.01.16 11:47:43 (*)   No license required to generate encrypted Nios II/e.
-Info (12250): Cpu: # 2024.01.16 11:47:43 (*)   Elaborating CPU configuration settings
-Info (12250): Cpu: # 2024.01.16 11:47:43 (*)   Creating all objects for CPU
-Info (12250): Cpu: # 2024.01.16 11:47:45 (*)   Generating RTL from CPU objects
-Info (12250): Cpu: # 2024.01.16 11:47:45 (*)   Creating plain-text RTL
-Info (12250): Cpu: # 2024.01.16 11:47:46 (*) Done Nios II generation
+Info (12250): Cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=counter_nios2_gen2_0_cpu --dir=C:/Users/erwan/AppData/Local/Temp/alt9738_2128057944611110451.dir/0007_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/erwan/AppData/Local/Temp/alt9738_2128057944611110451.dir/0007_cpu_gen//counter_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info (12250): Cpu: # 2024.01.16 14:39:59 (*) Starting Nios II generation
+Info (12250): Cpu: # 2024.01.16 14:39:59 (*)   Checking for plaintext license.
+Info (12250): Cpu: # 2024.01.16 14:40:00 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info (12250): Cpu: # 2024.01.16 14:40:00 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info (12250): Cpu: # 2024.01.16 14:40:00 (*)   LM_LICENSE_FILE environment variable is empty
+Info (12250): Cpu: # 2024.01.16 14:40:00 (*)   Plaintext license not found.
+Info (12250): Cpu: # 2024.01.16 14:40:00 (*)   No license required to generate encrypted Nios II/e.
+Info (12250): Cpu: # 2024.01.16 14:40:00 (*)   Elaborating CPU configuration settings
+Info (12250): Cpu: # 2024.01.16 14:40:00 (*)   Creating all objects for CPU
+Info (12250): Cpu: # 2024.01.16 14:40:01 (*)   Generating RTL from CPU objects
+Info (12250): Cpu: # 2024.01.16 14:40:01 (*)   Creating plain-text RTL
+Info (12250): Cpu: # 2024.01.16 14:40:01 (*) Done Nios II generation
 Info (12250): Cpu: Done RTL generation for module 'counter_nios2_gen2_0_cpu'
 Info (12250): Cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info (12250): Nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -3864,7 +3864,7 @@ Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "coun
 Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "counter:u0|altera_reset_controller:rst_controller_001" File: C:/intelFPGA_lite/18.1/TP2/db/ip/counter/counter.v Line: 301
 Info (12128): Elaborating entity "bin_to_7seg" for hierarchy "bin_to_7seg:u1" File: C:/intelFPGA_lite/18.1/TP2/top.vhd Line: 38
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2024.01.16.11:48:06 Progress: Loading sld1429b54a/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2024.01.16.14:40:09 Progress: Loading sld1429b54a/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -3901,10 +3901,10 @@ Info (21057): Implemented 1943 device resources after synthesis - the final reso
     Info (21061): Implemented 1753 logic cells
     Info (21064): Implemented 176 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4895 megabytes
-    Info: Processing ended: Tue Jan 16 11:48:30 2024
-    Info: Elapsed time: 00:01:54
-    Info: Total CPU time (on all processors): 00:01:48
+    Info: Peak virtual memory: 4883 megabytes
+    Info: Processing ended: Tue Jan 16 14:40:19 2024
+    Info: Elapsed time: 00:00:43
+    Info: Total CPU time (on all processors): 00:00:35
 
 
 +------------------------------------------+
