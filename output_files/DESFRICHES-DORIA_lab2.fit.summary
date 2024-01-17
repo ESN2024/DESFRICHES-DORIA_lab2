@@ -1,15 +1,15 @@
-Fitter Status : Successful - Tue Jan 16 14:40:29 2024
+Fitter Status : Successful - Wed Jan 17 11:19:13 2024
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : DESFRICHES-DORIA_lab2
 Top-level Entity Name : top
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 1,662 / 49,760 ( 3 % )
-    Total combinational functions : 1,550 / 49,760 ( 3 % )
-    Dedicated logic registers : 884 / 49,760 ( 2 % )
-Total registers : 884
-Total pins : 9 / 360 ( 3 % )
+Total logic elements : 1,709 / 49,760 ( 3 % )
+    Total combinational functions : 1,603 / 49,760 ( 3 % )
+    Dedicated logic registers : 910 / 49,760 ( 2 % )
+Total registers : 910
+Total pins : 23 / 360 ( 6 % )
 Total virtual pins : 0
 Total memory bits : 331,264 / 1,677,312 ( 20 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
