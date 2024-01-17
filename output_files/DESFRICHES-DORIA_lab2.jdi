@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="e52dc0df6d52b05ebea0"/>
+    <hash md5_digest_80b="f02a513f9305fdec6bb5"/>
   </project>
   <file_info>
     <file device="10M50DAF484C7G" path="DESFRICHES-DORIA_lab2.sof" usercode="0xFFFFFFFF"/>
@@ -139,7 +139,7 @@
   <sld_infos>
     <sld_info hpath="counter:u0" name="u0">
       <assignment_values>
-        <assignment_value text="QSYS_NAME counter HAS_SOPCINFO 1 GENERATION_ID 1705486706"/>
+        <assignment_value text="QSYS_NAME counter HAS_SOPCINFO 1 GENERATION_ID 1705498539"/>
       </assignment_values>
       <parameters/>
     </sld_info>

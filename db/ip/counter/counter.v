@@ -60,12 +60,18 @@ module counter (
 	wire   [1:0] mm_interconnect_0_pio_2_s1_address;                          // mm_interconnect_0:pio_2_s1_address -> pio_2:address
 	wire         mm_interconnect_0_pio_2_s1_write;                            // mm_interconnect_0:pio_2_s1_write -> pio_2:write_n
 	wire  [31:0] mm_interconnect_0_pio_2_s1_writedata;                        // mm_interconnect_0:pio_2_s1_writedata -> pio_2:writedata
+	wire         mm_interconnect_0_timer_0_s1_chipselect;                     // mm_interconnect_0:timer_0_s1_chipselect -> timer_0:chipselect
+	wire  [15:0] mm_interconnect_0_timer_0_s1_readdata;                       // timer_0:readdata -> mm_interconnect_0:timer_0_s1_readdata
+	wire   [2:0] mm_interconnect_0_timer_0_s1_address;                        // mm_interconnect_0:timer_0_s1_address -> timer_0:address
+	wire         mm_interconnect_0_timer_0_s1_write;                          // mm_interconnect_0:timer_0_s1_write -> timer_0:write_n
+	wire  [15:0] mm_interconnect_0_timer_0_s1_writedata;                      // mm_interconnect_0:timer_0_s1_writedata -> timer_0:writedata
 	wire         irq_mapper_receiver0_irq;                                    // jtag_uart_0:av_irq -> irq_mapper:receiver0_irq
+	wire         irq_mapper_receiver1_irq;                                    // timer_0:irq -> irq_mapper:receiver1_irq
 	wire  [31:0] nios2_gen2_0_irq_irq;                                        // irq_mapper:sender_irq -> nios2_gen2_0:irq
 	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [irq_mapper:reset, jtag_uart_0:rst_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, onchip_memory2_0:reset, rst_translator:in_reset]
 	wire         rst_controller_reset_out_reset_req;                          // rst_controller:reset_req -> [nios2_gen2_0:reset_req, onchip_memory2_0:reset_req, rst_translator:reset_req_in]
 	wire         nios2_gen2_0_debug_reset_request_reset;                      // nios2_gen2_0:debug_reset_request -> rst_controller:reset_in1
-	wire         rst_controller_001_reset_out_reset;                          // rst_controller_001:reset_out -> [mm_interconnect_0:pio_0_reset_reset_bridge_in_reset_reset, pio_0:reset_n, pio_1:reset_n, pio_2:reset_n]
+	wire         rst_controller_001_reset_out_reset;                          // rst_controller_001:reset_out -> [mm_interconnect_0:pio_0_reset_reset_bridge_in_reset_reset, pio_0:reset_n, pio_1:reset_n, pio_2:reset_n, timer_0:reset_n]
 
 	counter_jtag_uart_0 jtag_uart_0 (
 		.clk            (clk_clk),                                                     //               clk.clk
@@ -156,6 +162,17 @@ module counter (
 		.out_port   (pio_2_external_connection_export)       // external_connection.export
 	);
 
+	counter_timer_0 timer_0 (
+		.clk        (clk_clk),                                 //   clk.clk
+		.reset_n    (~rst_controller_001_reset_out_reset),     // reset.reset_n
+		.address    (mm_interconnect_0_timer_0_s1_address),    //    s1.address
+		.writedata  (mm_interconnect_0_timer_0_s1_writedata),  //      .writedata
+		.readdata   (mm_interconnect_0_timer_0_s1_readdata),   //      .readdata
+		.chipselect (mm_interconnect_0_timer_0_s1_chipselect), //      .chipselect
+		.write_n    (~mm_interconnect_0_timer_0_s1_write),     //      .write_n
+		.irq        (irq_mapper_receiver1_irq)                 //   irq.irq
+	);
+
 	counter_mm_interconnect_0 mm_interconnect_0 (
 		.clk_0_clk_clk                                  (clk_clk),                                                     //                                clk_0_clk.clk
 		.nios2_gen2_0_reset_reset_bridge_in_reset_reset (rst_controller_reset_out_reset),                              // nios2_gen2_0_reset_reset_bridge_in_reset.reset
@@ -208,13 +225,19 @@ module counter (
 		.pio_2_s1_write                                 (mm_interconnect_0_pio_2_s1_write),                            //                                         .write
 		.pio_2_s1_readdata                              (mm_interconnect_0_pio_2_s1_readdata),                         //                                         .readdata
 		.pio_2_s1_writedata                             (mm_interconnect_0_pio_2_s1_writedata),                        //                                         .writedata
-		.pio_2_s1_chipselect                            (mm_interconnect_0_pio_2_s1_chipselect)                        //                                         .chipselect
+		.pio_2_s1_chipselect                            (mm_interconnect_0_pio_2_s1_chipselect),                       //                                         .chipselect
+		.timer_0_s1_address                             (mm_interconnect_0_timer_0_s1_address),                        //                               timer_0_s1.address
+		.timer_0_s1_write                               (mm_interconnect_0_timer_0_s1_write),                          //                                         .write
+		.timer_0_s1_readdata                            (mm_interconnect_0_timer_0_s1_readdata),                       //                                         .readdata
+		.timer_0_s1_writedata                           (mm_interconnect_0_timer_0_s1_writedata),                      //                                         .writedata
+		.timer_0_s1_chipselect                          (mm_interconnect_0_timer_0_s1_chipselect)                      //                                         .chipselect
 	);
 
 	counter_irq_mapper irq_mapper (
 		.clk           (clk_clk),                        //       clk.clk
 		.reset         (rst_controller_reset_out_reset), // clk_reset.reset
 		.receiver0_irq (irq_mapper_receiver0_irq),       // receiver0.irq
+		.receiver1_irq (irq_mapper_receiver1_irq),       // receiver1.irq
 		.sender_irq    (nios2_gen2_0_irq_irq)            //    sender.irq
 	);
 

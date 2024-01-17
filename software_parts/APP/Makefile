@@ -139,10 +139,10 @@ ACDS_VERSION := 18.1
 # Define path to the application ELF. 
 # It may be used by the makefile fragments so is defined before including them. 
 # 
-ELF := compteur.elf
+ELF := compteur_timer.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += ../compteur.c
+C_SRCS += ../compteur_timer.c
 CXX_SRCS :=
 ASM_SRCS :=
 

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'counter'
  * SOPC Builder design path: ../../counter.sopcinfo
  *
- * Generated: Wed Jan 17 11:21:30 CET 2024
+ * Generated: Wed Jan 17 14:37:14 CET 2024
  */
 
 /*
@@ -136,6 +136,7 @@
 #define __ALTERA_AVALON_JTAG_UART
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
+#define __ALTERA_AVALON_TIMER
 #define __ALTERA_NIOS2_GEN2
 
 
@@ -155,19 +156,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x21020
+#define ALT_STDERR_BASE 0x21050
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x21020
+#define ALT_STDIN_BASE 0x21050
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x21020
+#define ALT_STDOUT_BASE 0x21050
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -182,7 +183,7 @@
 
 #define ALT_INCLUDE_INSTRUCTION_RELATED_EXCEPTION_API
 #define ALT_MAX_FD 32
-#define ALT_SYS_CLK none
+#define ALT_SYS_CLK TIMER_0
 #define ALT_TIMESTAMP_CLK none
 
 
@@ -192,7 +193,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x21020
+#define JTAG_UART_0_BASE 0x21050
 #define JTAG_UART_0_IRQ 0
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -239,7 +240,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_0 altera_avalon_pio
-#define PIO_0_BASE 0x21010
+#define PIO_0_BASE 0x21040
 #define PIO_0_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_0_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_0_CAPTURE 0
@@ -266,7 +267,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_1 altera_avalon_pio
-#define PIO_1_BASE 0x21000
+#define PIO_1_BASE 0x21030
 #define PIO_1_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_1_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_1_CAPTURE 0
@@ -293,7 +294,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_2 altera_avalon_pio
-#define PIO_2_BASE 0x0
+#define PIO_2_BASE 0x21020
 #define PIO_2_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_2_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_2_CAPTURE 0
@@ -312,5 +313,31 @@
 #define PIO_2_RESET_VALUE 0
 #define PIO_2_SPAN 16
 #define PIO_2_TYPE "altera_avalon_pio"
+
+
+/*
+ * timer_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_timer_0 altera_avalon_timer
+#define TIMER_0_ALWAYS_RUN 0
+#define TIMER_0_BASE 0x21000
+#define TIMER_0_COUNTER_SIZE 32
+#define TIMER_0_FIXED_PERIOD 0
+#define TIMER_0_FREQ 50000000
+#define TIMER_0_IRQ 1
+#define TIMER_0_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define TIMER_0_LOAD_VALUE 49999999
+#define TIMER_0_MULT 1.0
+#define TIMER_0_NAME "/dev/timer_0"
+#define TIMER_0_PERIOD 1
+#define TIMER_0_PERIOD_UNITS "s"
+#define TIMER_0_RESET_OUTPUT 0
+#define TIMER_0_SNAPSHOT 1
+#define TIMER_0_SPAN 32
+#define TIMER_0_TICKS_PER_SEC 1
+#define TIMER_0_TIMEOUT_PULSE_OUTPUT 0
+#define TIMER_0_TYPE "altera_avalon_timer"
 
 #endif /* __SYSTEM_H_ */
