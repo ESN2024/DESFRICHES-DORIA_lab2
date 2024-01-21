@@ -7,7 +7,7 @@ Cette valeur va alors être envoyée à 3 décodeurs BCD qui vont convertir la v
 
 # Création d'une structure NIOSII standard et ajout d'un timer et 3 PIOs
 ## Schéma du système
-![Schéma du système à réaliser](C:\intelFPGA_lite\18.1\TP2\systeme_complet.png)
+![Alt text](systeme_complet-1.png)
 
 ## Platform designer
-![Schéma du modèle qsys](C:\intelFPGA_lite\18.1\TP2\modele_qsys.png)
+![Alt text](modele_qsys-1.png)
