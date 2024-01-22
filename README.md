@@ -28,7 +28,8 @@ On a une routine d'interruption, et une fonction main().
 - *main()* cette fonction principale enregistre l'interruption du timer et initialise le compteur à 0.
 
 # Résultat
-"C:\intelFPGA_lite\18.1\TP2\media\IMG_8029.MOV"
+[Uploading IMG_8029.zip…]()
+
 
 # Conclusion
 Ce TP m'a permis de rentrer davantage dans le détail de la conception conjointe en liant du développement en c et du vhdl.
